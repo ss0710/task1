@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vanilla JS</title>
+<style>
+    .inner_div{
+        height: 95vh;
+        width: 100%;
+        background-color: rgba(33, 133, 255, 0.473);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-body{
+        text-align: center;
+    }
+
+    .input-element {
+        margin-bottom: 10px;
+    }
+
+    #signup-error-message{
+        color: rgb(252, 53, 53);
+    }
+
+    .redirect-link {
+        font-weight: bold;
+        color: rgb(66, 66, 251);
+        cursor: pointer;
+    }
+
+</style>
+<script src="file.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SNEAKERHEAD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="inner_div">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-c2cdae12950a8908a90e3c7af5a73e2a-lq" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                    <h1>Login</h1>
+                    <input class="input-element" type="email" id="login_email" placeholder="Enter email"/> <br>
+                    <input class="input-element" type="password" id="login_password" placeholder="Enter passsword"/> <br>
+                    <p id="signup-error-message"></p>
+                    <button type="button" class="btn btn-primary" onclick="logInVallidation()"> Submit </button>
+                    
+                    <p>Don't have an account? <a class="redirect-link" onclick="redirectToSignup()">Signup here</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
